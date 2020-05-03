@@ -1,0 +1,36 @@
+{:templates {:alfred "osascript -e 'tell application \"Alfred 4\" to run trigger \"%s\" in workflow \"%s\" with argument \"%s\"'"
+             :km "osascript -e 'tell application \"Keyboard Maestro Engine\" to do script \"%s\"'"
+             }
+        
+ :simlayer-threshold 100
+ :simlayers {
+             :x-mode {:key :x}
+             }
+        
+ :main [{:des "right cmd -> alfred"
+         :rules [[:right_command :right_command nil {:alone :!Cspacebar}]]}
+
+        {:des "swap : and ;"
+         :rules [[:#Psemicolon :!Ssemicolon]
+                 [:!Ssemicolon :semicolon]]}
+
+        {:des "xkey (spotify)"
+         :rules [:x-mode
+                 [:p [:alfred "show_playlists" "com.vdesabou.spotify.mini.player"]]
+                 [:t [:alfred "show_current_track" "com.vdesabou.spotify.mini.player"]]
+                 [:e [:alfred "show_alfred_playlist" "com.vdesabou.spotify.mini.player"]]
+                 [:r [:alfred "show_recent_tracks" "com.vdesabou.spotify.mini.player"]]
+                 [:n [:alfred "show_new_releases" "com.vdesabou.spotify.mini.player"]]
+                 [:f [:alfred "show_search_online" "com.vdesabou.spotify.mini.player"]]
+                 [:b [:alfred "show_browse" "com.vdesabou.spotify.mini.player"]]
+                 [:s [:alfred "shuffle" "com.vdesabou.spotify.mini.player"]]
+                 [:i [:alfred "display_current_track_notification" "com.vdesabou.spotify.mini.player"]]
+                 [:j [:alfred "play_alfred_playlist" "com.vdesabou.spotify.mini.player"]]
+                 [:a [:alfred "add_current_track_to" "com.vdesabou.spotify.mini.player"]]
+                 [:d [:alfred "remove_current_track_from" "com.vdesabou.spotify.mini.player"]]
+                 [:o [:alfred "show_in_spotify" "com.vdesabou.spotify.mini.player"]]
+                 [:z [:alfred "previous" "com.vdesabou.spotify.mini.player"]]
+                 [:c [:alfred "next" "com.vdesabou.spotify.mini.player"]]
+                 [:spacebar [:alfred "playpause" "com.vdesabou.spotify.mini.player"]]
+                 ]}
+]}
