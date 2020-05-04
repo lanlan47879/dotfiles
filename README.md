@@ -1,3 +1,4 @@
 # dotfiles
 
-![Info](screnshoots/info.png)
+## Basic Info
+![](screenshots/info.png)
