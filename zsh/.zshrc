@@ -2,7 +2,40 @@
 export ZSH="/Users/alanacquinones/.oh-my-zsh"
 
 # Choose the theme
-ZSH_THEME="dracula"
+ZSH_THEME="spaceship"   
+
+SPACESHIP_PROMPT_ORDER=(
+  battery       # Battery level and status
+  time          # Time stamps section
+  exec_time     # Execution time
+  user          # Username section
+  dir           # Current directory section
+  host          # Hostname section
+  git           # Git section (git_branch + git_status)
+  package       # Package version
+  venv          # virtualenv section
+  pyenv         # Pyenv section
+  line_sep      # Line break
+  vi_mode       # Vi-mode indicator
+  jobs          # Background jobs indicator
+  exit_code     # Exit code section
+  char          # Prompt character
+)
+
+SPACESHIP_PROMPT_SEPARATE_LINE=true
+SPACESHIP_PROMPT_FIRST_PREFIX_SHOW=true
+
+SPACESHIP_TIME_SHOW=true
+SPACESHIP_TIME_12HR=true
+SPACESHIP_TIME_COLOR=magenta
+
+SPACESHIP_DIR_COLOR=blue
+
+SPACESHIP_EXEC_TIME_ELAPSED=3
+SPACESHIP_EXEC_TIME_COLOR=cyan
+
+SPACESHIP_BATTERY_SHOW=always
+SPACESHIP_BATTERY_THRESHOLD=30
 
 # Uncomment the following line to use case-sensitive completion.
 CASE_SENSITIVE="true"
