@@ -20,17 +20,7 @@ Some of the stuff I can do with this 'x' key
 * etc...
 
 ### Hammerspoon
-Managed to set up some basic window management features. I've used other WMs ([Magnet](https://magnet.crowdcafe.com/), [yabai](https://github.com/koekeishiya/yabai), and [Mosaic](https://www.lightpillar.com/mosaic.html)) and I've tried to incorporate features I've really enjoyed from those. Right now, this uses hotkeys to:
-* Focus on windows up/down/left/right of the current window
-* Snap windows up/down/left/right, in quarters, and in thirds 
-* Increase/decrease the width and height of the curent window
-* Move windows up/down/left/right by increments
-
-Features I wanna add include:
-* Adding a border around the current window
-* Figuring out a way to move windows accross spaces
-
-<sub>NOTE: I'm currently using a Keyboard Maestro macro found [here](https://forum.keyboardmaestro.com/t/move-frontmost-window-to-a-different-space/10512) to do this. It moves windows by focusing the mouse on an application's title bar and simulating a hotkey that moves me to a different space. It's reliable and it works great but I'd rather find something that works a little faster and is cheaper than KM.</sub>
+More on my Hammerspoon configuration found [here](https://github.com/lanlan47879/hammerspoon).
 
 ![WM Preview](screenshots/hammerspoonwm.png)
 
