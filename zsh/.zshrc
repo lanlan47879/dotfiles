@@ -60,6 +60,7 @@ plugins=(git zsh-autosuggestions)
 # -----------------------------------
 # ALIASES
 # -----------------------------------
+source ~/.foxservers
 
 alias c='clear'
 alias cp='cp -iv'
@@ -80,12 +81,10 @@ vs() {
     open $1 -a "Visual Studio Code"
 }
 
-alias fox01='ssh ded687@fox01.cs.utsa.edu'
-alias fox02='ssh ded687@fox02.cs.utsa.edu'
-alias fox03='ssh ded687@fox03.cs.utsa.edu'
-alias fox04='ssh ded687@fox04.cs.utsa.edu'
-alias fox05='ssh ded687@fox05.cs.utsa.edu'
-alias fox06='ssh ded687@fox06.cs.utsa.edu'
-
+# -----------------------------------
+# EXTRA
+# -----------------------------------
+source ~/.foxservers
 source $ZSH/oh-my-zsh.sh
 source ./zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
