@@ -84,7 +84,6 @@ vs() {
 # -----------------------------------
 # EXTRA
 # -----------------------------------
-source ~/.foxservers
 source $ZSH/oh-my-zsh.sh
 source ./zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
